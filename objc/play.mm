@@ -10,7 +10,6 @@ using namespace json11;
 
 #import "gen/Play2Api.h"
 #import "gen/Play2Item.h"
-#import "gen/Play2ApiCppProxy.h"
 #import "gen/Play2Network.h"
 #import "gen/Play2NetworkParams.h"
 #import "NetworkObjc.h"
@@ -33,7 +32,7 @@ using namespace json11;
 void test() {
     NetworkObjc *impl = [[NetworkObjc alloc] init];
     
-    Play2ApiCppProxy *api = [Play2ApiCppProxy create:@"numbers.sqlite"];
+    Play2Api *api = [Play2Api create:@"numbers.sqlite"];
 
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
     params[@(Play2NetworkParamsURL)] = @"https://api.random.org/json-rpc/1/invoke";
