@@ -40,10 +40,14 @@ Since the focus of this project is sharing of non-UI code across platforms the o
 1. Run `cd Play2`
 1. Run `sh subs.sh` to set up and pull submodules
 1. Optionally run `sudo gem install xcpretty` to beautify the output of `xcodebuild` 
+1. Run `make mac`	.
 1. Run `make tests`	.
 	This builds and runs a series of *gtest* unit tests that are ran inside mac shell.
 	The last test downloads some JSON data from a remote site, updates a local database and pulls back the results. This means every time you run it the final
 	`Updated count` value will be different.
+1. Run `make ios`
+1. The iOS app in app-ios should run, pick the target called 'app'
+
 
 If you have gotten this far you should proceed to the actual starter apps!
 
