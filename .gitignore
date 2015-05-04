@@ -11,3 +11,4 @@ deps/build
 build
 .gitmodules
 objc/gen
+build_ios
