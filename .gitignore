@@ -1,16 +1,10 @@
 djinni-output-temp
-deps/json11
 mac_xcode
-deps/djinni
 src/interface
-deps/build
 build
 .gitmodules
 objc/gen
 build_ios
-deps/json11.target.mk
-deps/sqlite3.target.mk
-deps/SQLiteCpp.target.mk
 GypAndroid.mk
 libPlay2_android.target.mk
 libPlay2.target.mk
