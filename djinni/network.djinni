@@ -1,0 +1,15 @@
+@import "item.djinni"
+@import "parsed_items.djinni"
+@import "http_response.djinni"
+
+network_params = enum {	
+    URL;
+    APIKEY;
+    N;
+    MAX;
+}
+
+network = interface +o +j {
+    download(params: map<network_params, string>): http_response;
+}
+

@@ -1,0 +1,9 @@
+
+
+http_response = record {
+    http_code: i16;
+    error: string;
+	data: string;
+}
+
+

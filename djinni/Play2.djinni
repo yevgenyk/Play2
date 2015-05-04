@@ -1,0 +1,13 @@
+@import "item.djinni"
+@import "parsed_items.djinni"
+@import "network.djinni"
+
+api = interface +c {
+    static create(database_path: string): api;
+
+	download(params: map<network_params, string>, impl: network): parsed_items;
+   	updateItems(json: string, stamp :i64): i32;
+   	updateItemsFromList(new_items :list<item>, stamp :i64): i32;   	
+   	items(filter: string): list<item>;
+   	itemsGroupedByCount(filter: string): list<item>;   	
+}

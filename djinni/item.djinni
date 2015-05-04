@@ -1,0 +1,9 @@
+
+item = record {
+    id:     i64;
+    value:  i64;
+    name:   optional<string>;
+    time:   i64;
+    count:  i32;
+}
+

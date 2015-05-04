@@ -1,0 +1,9 @@
+@import "item.djinni"
+
+
+parsed_items = record {
+    http_code: i16;
+    error: string;
+	items: list<item>;
+}
+
