@@ -7,7 +7,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "gen/Play2ApiCppProxy.h"
 #import "gen/Play2Api.h"
 #import "gen/Play2Item.h"
 #import "gen/Play2Network.h"
@@ -20,7 +19,7 @@ NSString *const CellIdentifier = @"Play2Cell";
 
 @interface ViewController ()
 
-@property (strong, nonatomic) id <Play2Api> api;
+@property (strong, nonatomic) Play2Api *api;
 @property (strong, nonatomic) NSArray *items;
 @property (readwrite) int64_t mLatestStamp;
 
@@ -38,7 +37,7 @@ NSString *const CellIdentifier = @"Play2Cell";
         return;
     }
     
-    self.api = [Play2ApiCppProxy create:appDelegate.dbPath];
+    self.api = [Play2Api create:appDelegate.dbPath];
     
     self.items = [self.api itemsGroupedByCount:@""];
     
