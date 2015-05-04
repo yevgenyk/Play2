@@ -45,8 +45,6 @@ Since the focus of this project is sharing of non-UI code across platforms the o
 	This builds and runs a series of *gtest* unit tests that are ran inside mac shell.
 	The last test downloads some JSON data from a remote site, updates a local database and pulls back the results. This means every time you run it the final
 	`Updated count` value will be different.
-1. Run `make ios`
-1. The iOS app in app-ios should run, pick the target called 'app'
 
 
 If you have gotten this far you should proceed to the actual starter apps!
@@ -54,7 +52,9 @@ If you have gotten this far you should proceed to the actual starter apps!
 
 ### iOS app
 1.	Run `make ios` to generate objective-c proxies used by the actual app.
-1.	The actual app is located in `app-ios/app` folder. It should just load and run. Pull to refresh to see numbers change!
+1.	The actual app is located in `app-ios/app` folder. 
+1. 	The iOS app in app-ios should run, pick the target called 'app'
+It should just load and run. Pull to refresh to see numbers change!
 	Updated numbers will show up in blue!
 
 
