@@ -1,0 +1,13 @@
+deps/build/sqlite3.build/Debug/sqlite3.build/sqlite3-generated-files.hmap
+deps/SQLiteCpp
+deps/optional
+deps/gyp
+djinni-output-temp
+deps/json11
+mac_xcode
+deps/djinni
+src/interface
+deps/build
+build
+.gitmodules
+objc/gen
