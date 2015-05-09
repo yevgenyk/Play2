@@ -34,10 +34,14 @@
         'deps/djinni/support-lib/support_lib.gyp:djinni_objc',
         'libPlay2',
       ],
+      'xcode_settings': {
+          'DEAD_CODE_STRIPPING': 'YES',
+          'SKIP_INSTALL': 'YES',
+      },
       'sources': [
         '<!@(python glob.py objc *.mm *.h *.m)',
       ],
-      'sources!': ['play.mm'],
+      #---> not needed since it has int main() definition for testing 'sources!': ['play.mm'],
       'include_dirs': [
         'include',
         'objc',
