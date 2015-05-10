@@ -41,8 +41,11 @@ Since the focus of this project is sharing of non-UI code across platforms the o
 1. Run `sh subs.sh` to set up and pull submodules
 1. Optionally run `sudo gem install xcpretty` to beautify the output of `xcodebuild` 
 1. ===> At this time I am pinning Play2 to a an older commit of Djinni. The latest version of djinni is going though some big changes.
-		`cd cd deps/djinni`
+
+		`cd deps/djinni`
+
 		`git checkout 41b3808619fae2290e80d725615a9a12ae640dd4`
+		
 		`cd ../..`		
 
 1. Run `make mac`	.
