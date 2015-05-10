@@ -8,3 +8,6 @@ build_ios
 GypAndroid.mk
 libPlay2_android.target.mk
 libPlay2.target.mk
+app-ios/app/app.xcodeproj/project.xcworkspace/xcuserdata
+app-ios/app/app.xcodeproj/project.xcworkspace/xcshareddata
+app-ios/app/app.xcodeproj/xcuserdata

@@ -12,6 +12,8 @@
 #import "gen/Play2Network.h"
 #import "gen/Play2ParsedItems.h"
 #import "NetworkObjc.h"
+//--->temp: this is needed with older versions of djinni hash:41b3808619fae2290e80d725615a9a12ae640dd4
+#import "gen/Play2ApiCppProxy.h"
 
 
 NSString *const CellIdentifier = @"Play2Cell";
@@ -19,7 +21,10 @@ NSString *const CellIdentifier = @"Play2Cell";
 
 @interface ViewController ()
 
-@property (strong, nonatomic) Play2Api *api;
+//--->temp: this is needed with older versions of djinni hash:41b3808619fae2290e80d725615a9a12ae640dd4
+@property (strong, nonatomic) id <Play2Api> api;
+//@property (strong, nonatomic) Play2Api *api;
+
 @property (strong, nonatomic) NSArray *items;
 @property (readwrite) int64_t mLatestStamp;
 
@@ -37,7 +42,9 @@ NSString *const CellIdentifier = @"Play2Cell";
         return;
     }
     
-    self.api = [Play2Api create:appDelegate.dbPath];
+    //--->temp: this is needed with older versions of djinni hash:41b3808619fae2290e80d725615a9a12ae640dd4
+    self.api = [Play2ApiCppProxy create:appDelegate.dbPath];
+//    self.api = [Play2Api create:appDelegate.dbPath];
     
     self.items = [self.api itemsGroupedByCount:@""];
     
