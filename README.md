@@ -42,14 +42,15 @@ Since the focus of this project is sharing of non-UI code across platforms the o
 1. Optionally run `sudo gem install xcpretty` to beautify the output of `xcodebuild` 
 1. ===> At this time I am pinning Play2 to a an older commit of Djinni. The latest version of djinni is going though some big changes.
 
-		`cd deps/djinni`
+		cd deps/djinni
 
-		`git checkout 41b3808619fae2290e80d725615a9a12ae640dd4`
-		
-		`cd ../..`		
+		git checkout 41b3808619fae2290e80d725615a9a12ae640dd4
 
-1. Run `make mac`	.
-1. Run `make tests`	.
+		cd ../..
+
+1. Run `make mac`	
+1. Run `make tests`	
+
 	This builds and runs a series of *gtest* unit tests that are ran inside mac shell.
 	The last test downloads some JSON data from a remote site, updates a local database and pulls back the results. This means every time you run it the final
 	`Updated count` value will be different.
