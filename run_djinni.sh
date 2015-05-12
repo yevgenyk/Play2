@@ -58,7 +58,7 @@ $base_dir/deps/djinni/src/run-assume-built \
     --cpp-optional-template "std::experimental::optional" \
     \
     --objc-out "$temp_out/objc" \
-    --objcpp-namespace Play2_gen \
+    --objcpp-namespace Play2_gen_objcpp \
     --objc-type-prefix Play2 \
     \
     --java-out "$temp_out/java" \
@@ -67,6 +67,7 @@ $base_dir/deps/djinni/src/run-assume-built \
     --jni-out "$temp_out/jni" \
     --ident-jni-class NativeFooBar \
     --ident-jni-file native_foo_bar \
+    --jni-namespace Play2_gen_jni \
     \
     --idl "$in"
 

@@ -14,9 +14,6 @@ using namespace json11;
 #import "gen/Play2NetworkParams.h"
 #import "NetworkObjc.h"
 
-//--->temp: this is needed with older versions of djinni hash:41b3808619fae2290e80d725615a9a12ae640dd4
-#import "gen/Play2ApiCppProxy.h"
-
 
 @interface HttpTestSetup : NSObject
 @property (strong, nonatomic) NSString *data;
@@ -35,9 +32,7 @@ using namespace json11;
 void test() {
     NetworkObjc *impl = [[NetworkObjc alloc] init];
 
-//--->temp: this is needed with older versions of djinni hash:41b3808619fae2290e80d725615a9a12ae640dd4
-    id <Play2Api> api = [Play2ApiCppProxy create:@"numbers.sqlite"];
-//    Play2Api *api = [Play2Api create:@"numbers.sqlite"];
+    Play2Api *api = [Play2Api create:@"numbers.sqlite"];
 
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
     params[@(Play2NetworkParamsURL)] = @"https://api.random.org/json-rpc/1/invoke";
