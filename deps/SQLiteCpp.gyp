@@ -2,6 +2,10 @@
     {
       'target_name': 'SQLiteCpp',
       'type': 'static_library',
+      'xcode_settings': {
+          'DEAD_CODE_STRIPPING': 'YES',
+          'SKIP_INSTALL': 'YES',
+      },
       'sources': [
         "SQLiteCpp/src/Column.cpp",      
         "SQLiteCpp/src/Database.cpp",

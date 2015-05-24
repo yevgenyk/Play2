@@ -2,6 +2,10 @@
     {
       'target_name': 'json11',
       'type': 'static_library',
+      'xcode_settings': {
+          'DEAD_CODE_STRIPPING': 'YES',
+          'SKIP_INSTALL': 'YES',
+      },
       'sources': [
         "json11/json11.hpp",
         "json11/json11.cpp",

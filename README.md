@@ -103,3 +103,9 @@ Run `make android` to build the example android application
 
 ![Android](https://github.com/yevgenyk/Play2/blob/master/deps/screens/android2.png)
 
+### More info
+
+http://codingsimplicity.com/play2-starter-project-ios-android-using-dninni-and-gyp/
+
+
+

@@ -2,6 +2,10 @@
     {
       'target_name': 'gtest',
       'type': "static_library",
+      'xcode_settings': {
+          'DEAD_CODE_STRIPPING': 'YES',
+          'SKIP_INSTALL': 'YES',
+      },
       'sources': [
         'gtest-1.7.0/src/gtest-all.cc',
         'gtest-1.7.0/src/gtest_main.cc',

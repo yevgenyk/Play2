@@ -2,6 +2,10 @@
     {
       'target_name': 'sqlite3',
       'type': 'static_library',
+      'xcode_settings': {
+          'DEAD_CODE_STRIPPING': 'YES',
+          'SKIP_INSTALL': 'YES',
+      },
       'sources': [
         "sqlite3/sqlite3.c"
       ],
